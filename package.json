@@ -1,0 +1,40 @@
+{
+  "name": "graphql-osaka-2019",
+  "version": "0.0.1",
+  "description": "GraphQL Osaka 2019",
+  "author": {
+    "name": "Open Source Software Developers Osaka"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.15",
+    "gatsby-plugin-manifest": "^2.2.2",
+    "gatsby-plugin-offline": "^2.2.2",
+    "gatsby-plugin-react-helmet": "^3.1.1",
+    "gatsby-plugin-sass": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-scrollspy": "^3.4.0",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "serve": "gatsby serve",
+    "clean": "rimraf .cache public",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3"
+  },
+  "keywords": [
+    "graphql",
+    "graphql-osaka",
+    "graphql-osaka-2019"
+  ]
+}
